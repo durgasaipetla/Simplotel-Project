@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg,#FFF6AD,#FFA9F8);
+}
+
+.navbar {
+    position: fixed;
+    background-color: #FF7070;
+    height: auto;
+    width: 100%;
+    z-index: 5;
+}
+
+.nav-links {
+    align-items: center;
+    position: relative;
+    height: 100%;
+    font-weight: 900;
+    box-sizing: border-box;
+    list-style-type: none;
+    justify-content:space-around ;
+    flex-direction: row;
+    margin:0 10%;
+    font-size: large;
+    letter-spacing: 4px;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+}
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links div{
+    margin: 0 10px;
+}
+
+.nav-links img{
+    height: 40px;
+    cursor: pointer;
+}
+
+.firstpage{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 60px;
+}
+.firstpage .description{
+    width: 50%;
+    height: auto;
+    padding: 15% 6%;
+    box-sizing: border-box;
+}
+.description div{
+    margin-bottom: 10%;
+    height: auto;
+}
+.description button{
+    width: 35%;
+    height: 18%;
+    background-color: #FF7070;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.firstpage .heading{
+    letter-spacing: 5px;
+    font-size: 45px;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS' , sans-serif;
+    text-transform: uppercase;
+}
+.description .para{
+    font-family: 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+}
+.firstpage .image{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.image img{
+    width: 180%;
+    height: 115%;
+    transform: translate(-20%,0);
+}
+
+.secondpage{
+    display: flex;
+    flex-direction: row;
+    height: 700px;
+    width: 100%;
+    transform: translate(0,8%);
+}
+.secondpage>div{
+    height: 100%;
+    width: 50%;
+}
+.leftimg div{
+    height: 200px;
+    width: 250px;
+    margin: 0 20px 10px 0;
+    overflow: hidden;
+}
+.leftimg img{
+    width: 100%;
+    height: auto;
+    transform: translate(0, -25%);
+}
+.rightimg img{
+    height: 410px;
+    width: 250px;
+}
+.allimg{
+    display: flex;
+    flex-direction: row;
+    margin: 20% 0 0 18%;
+}
+.leftimg{
+    display: flex;
+    flex-direction: column;
+}
+
+.right .block{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: auto;
+    width: 60%;
+    background-color: #FF7070;
+    margin: 33% 0 0 5%;
+    padding: 30px;
+}
+.right .mini{
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+.right .large{
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    
+}
+.mini img{
+    cursor: pointer;
+    height: 30px;
+    transform: translate(0, 30%);
+    
+}
+.mini:last-child{
+    cursor: pointer;
+    margin: 0 !important;
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .firstpage{
+        top:185px;
+    }
+    .secondpage{
+        transform: translate(0,20%);
+    }
+  
+    .image img{
+        width: 100%;
+        height: auto;
+    }
+    .navbar{
+        height: auto;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width: 632px){
+    .right .large{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 632px){
+    .right .large{
+        font-size: 30px;
+    }
+    .secondpage{
+        transform: translate(0,30%);
+    }
+    .leftimg div{
+        height: 100px;
+        width: 150px;
+        margin: 0 10px 10px 0;
+    }
+    .rightimg img{
+        height: 210px;
+        width: 140px;
+    }
+   
+}
+@media screen and (max-width: 500px){
+    .secondpage{
+        transform: translate(0,40%);
+    }
+    .firstpage .heading{
+        letter-spacing: 2px;
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 380px){
+    .right .large{
+        font-size: 20px;
+    }
+    .secondpage{
+        transform: translate(0,50%);
+    }
+    .firstpage .heading{
+        letter-spacing: 2px;
+        font-size: 25px;
+    }
+   
+}
+@media screen and (max-width: 320px){
+
+    .secondpage{
+        transform: translate(0,60%);
+    }
+
+}
+@media screen and (max-width: 290px){
+    .secondpage{
+        transform: translate(0,70%);
+    }
+}
+@media screen and (max-width: 1220px){
+    .image img{
+        width: auto;
+        height: 100%;
+    }
+    .secondpage{
+        flex-direction: column;
+    }
+    .right .block{
+        background-color: #FF7070;
+        margin-left:25%;
+        margin-top: 10%;
+    }
+}
